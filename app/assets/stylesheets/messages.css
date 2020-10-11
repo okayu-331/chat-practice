@@ -58,16 +58,81 @@
   background-color: #ffe4e1;
   height: 100px;
   padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-title {
+  font-size: 24px;
+  /* margin-top: 36px; */
+}
+
+.header-button a {
+  color: #333;
+  text-decoration: none;
+  padding: 14px;
+  border: 1px solid #333;
+  border-radius: 10px;
 }
 
 .messages {
   background-color: #fff;
   height: calc(100vh - 100px - 90px);
   padding: 46px 40px 0;
+  overflow: scroll;
+}
+
+.message {
+  margin: 15px 0;
+}
+
+.upper-message {
+  display: flex;
+  align-items: flex-end;
+}
+
+.message-user {
+  color: #333;
+  font-size: 16px;
+}
+
+.message-date {
+  color: #aaa;
+  font-size: 12px;
+  padding-left: 10px;
+}
+
+.lower-message {
+  padding: 10px 15px;
+  background-color: #93ee5e;
+  border-radius: 15px;
+  width: 300px;
+}
+
+.message-content {
+  color: #333;
+  font-size: 16px;
 }
 
 .form {
   background-color: #ffe4e1;
   height: 90px;
   padding: 20px 40px;
+  display: flex;
+}
+
+.form-message {
+  background-color: #fff;
+  border-radius: 10px;
+  padding-left: 10px;
+  width: 100%;
+}
+
+.form-submit {
+  background-color: #ee6868;
+  border-radius: 10px;
+  color: #fff;
+  margin-left: 10px;
+  padding: 0 20px;
 }
