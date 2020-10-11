@@ -57,10 +57,11 @@
   padding: 20px 30px;
   border: 1px solid #ddd;
   border-radius: 2px;
+  text-align: left;
 }
 #error_explanation h2 {
   margin-bottom: 10px;
-  color: #d65f4c;
+  color: #eb2d2d;
   font-size: 14px;
 }
 #error_explanation ul {
@@ -71,5 +72,5 @@
 #error_explanation li {
   margin: 0;
   padding: 0;
-  font-size: 13px;
+  font-size: 14px;
 }
