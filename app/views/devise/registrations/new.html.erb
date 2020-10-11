@@ -1,0 +1,26 @@
+<div class="login-wrapper">
+  <h2>Create Account</h2>
+  <div class="login-form">
+    <%= form_with model: resource, as: resource_name, url: registration_path(resource_name), local: true do |f|%>
+      <%= devise_error_messages!%>
+        <div class="form-group">
+          <%= f.label :name%>
+          <%= f.text_field :name %>
+        </div>
+        <div class="form-group">
+          <%= f.label :email %>
+          <%= f.email_field :email %>
+        </div>
+        <div class="form-group">
+          <%= f.label :password%>
+          <i>(英数字6文字以上)</i>
+          <%= f.password_field :password, autocomplete: "off" %>
+        </div>
+        <div class="form-group">
+          <%= f.label :password_confirmation%>
+          <%= f.password_field :password_confirmation, autocomplete: "off" %>
+        </div>
+        <%= f.submit "Create Account", class: "login-btn" %>
+    <% end %>
+  </div>
+</div>
