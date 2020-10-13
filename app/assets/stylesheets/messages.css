@@ -71,6 +71,7 @@
 .header-button a {
   color: #333;
   text-decoration: none;
+  margin-left: 10px;
   padding: 14px;
   border: 1px solid #333;
   border-radius: 10px;

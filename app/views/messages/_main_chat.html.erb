@@ -3,6 +3,7 @@
     <%= @room.name %>
   </div>
   <div class="header-button">
+    <%= link_to "チャットルームを削除", room_path(@room), method: :delete %>
     <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
   </div>
 </div>
