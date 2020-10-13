@@ -115,14 +115,14 @@
   font-size: 16px;
 }
 
-.form {
+.form-message {
   background-color: #ffe4e1;
   height: 90px;
   padding: 20px 40px;
   display: flex;
 }
 
-.form-message {
+.form-content {
   background-color: #fff;
   border-radius: 10px;
   padding-left: 10px;
