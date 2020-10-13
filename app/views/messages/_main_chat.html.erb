@@ -1,6 +1,6 @@
 <div class="chat-header">
   <div class="header-title">
-  チャット相手の名前
+    <%= @room.name %>
   </div>
   <div class="header-button">
     <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
