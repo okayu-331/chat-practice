@@ -1,0 +1,18 @@
+<div class="chat-room-form">
+  <h1>新規チャットルーム</h1>
+  <%=form_with model: @room, local: true do |f|%>
+      <div class="chat-room-form-group">
+        <%= f.label :チャットルーム名 %>
+        <%= f.text_field :name, placeholder: "チャットルーム名を入力してください" %>
+      </div>
+      <div class="chat-room-form-group">
+        <label for="chat_room_チャットメンバー">チャットメンバー</label>
+        <select>
+            <option>チャットするユーザーを選択してください</option>
+            <option>ユーザー1</option>
+            <option>ユーザー2</option>
+          </select>
+      </div>
+      <%= f.submit class: "chat-room-create-btn" %>
+  <% end %>
+</div>
