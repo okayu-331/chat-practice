@@ -9,21 +9,25 @@
 </div>
 <div id="messages">
   <% @messages.each do |message| %>
-    <div class="message">
-      <div class="upper-message">
-        <div class="message-user">
-          <%= message.user.name %>
+    <% if message.user.id == current_user.id %>
+      <div class="message my-message">
+    <% else %>
+      <div class="message">
+    <% end %>
+        <div class="upper-message">
+          <div class="message-user">
+            <%= message.user.name %>
+          </div>
+          <div class="message-date">
+            <%= l message.created_at %>
+          </div>
         </div>
-        <div class="message-date">
-          <%= l message.created_at %>
+        <div class="lower-message">
+          <div class="message-content">
+            <p><%= message.content %></p>
+          </div>
         </div>
       </div>
-      <div class="lower-message">
-        <div class="message-content">
-          <p><%= message.content %></p>
-        </div>
-      </div>
-    </div>
   <% end %>
 </div>
 <%= form_with model: [@room, @message], class: "form-message" do |f| %>
