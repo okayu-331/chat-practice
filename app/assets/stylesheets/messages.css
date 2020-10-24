@@ -85,7 +85,8 @@
 }
 
 .message {
-  margin: 15px 0;
+  width: 300px;
+  margin: 15px auto 15px 0;
 }
 
 .upper-message {
@@ -106,9 +107,17 @@
 
 .lower-message {
   padding: 10px 15px;
-  background-color: #93ee5e;
+  background-color: #eaeaea;
   border-radius: 15px;
+}
+
+.my-message {
   width: 300px;
+  margin: 15px 0 15px auto;
+}
+
+.my-message .lower-message {
+  background-color: #93ee5e;
 }
 
 .message-content {
