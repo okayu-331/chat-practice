@@ -1,8 +1,12 @@
 class MessagesController < ApplicationController
   def index
-    @message = Message.new
     @room = Room.find(params[:room_id])
-    @messages = @room.messages.includes(:user)
+    if @room.user_ids.include?(current_user.id)
+      @message = Message.new
+      @messages = @room.messages.includes(:user)
+    else
+      redirect_to root_path
+    end
   end
 
   def create
