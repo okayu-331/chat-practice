@@ -53,6 +53,27 @@
   opacity: 0.9;
 }
 
+.main-room {
+  margin: 20vh auto 0;
+}
+
+.main-room > a {
+  display: block;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  background-color: #ee6868;
+  margin: 40px auto;
+  padding: 14px 30px;
+  border: 1px solid #ee6868;
+  border-radius: 10px;
+}
+
+.main-room > a:hover {
+  color: #ee6868;
+  background-color: #fff;
+}
+
 .error-alert {
   background-color: #ffe4e1;
   display: block;

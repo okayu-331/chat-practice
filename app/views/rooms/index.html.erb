@@ -2,4 +2,8 @@
   <div class="side-bar">
     <%= render "messages/side_bar" %>
   </div>
+  <div class="main-room">
+    <%= link_to "新規チャットルームを作成する", new_room_path %>
+    <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
+  </div>
 </div>
