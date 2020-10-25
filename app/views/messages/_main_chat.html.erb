@@ -1,6 +1,11 @@
 <div class="chat-header">
   <div class="header-title">
-    <%= @room.name %>
+    <p><%= @room.name %></p>
+    <p>メンバー：
+      <% @room.user_ids.each do |user| %>
+        <%= User.find(user).name %>
+      <% end %>
+    </p>
   </div>
   <div class="header-button">
     <%= link_to "チャットルームを削除", room_path(@room), method: :delete %>
